@@ -48,9 +48,11 @@ Module::Build->new(
         'URI::Template' => 0,
         'XML::RegExp' => 0,
     },
-    resources => {
-        license => 'http://dev.perl.org/licenses/',
-        bugtracker => 'http://rt.cpan.org/NoAuth/Bugs.html?Dist=Data-HAL',
-        repository => 'https://github.com/daxim/Data-HAL',
+    meta_merge  => {
+        resources => {
+            license => 'http://dev.perl.org/licenses/',
+            bugtracker => 'http://rt.cpan.org/NoAuth/Bugs.html?Dist=Data-HAL',
+            repository => 'https://github.com/daxim/Data-HAL',
+        },
     },
 )->create_build_script;
